@@ -1,0 +1,12 @@
+extends layout
+
+block content
+    h1 Mini Message Board
+    
+    form(method='POST' action='/new')
+        input(type="text", placeholder='Your name', name='name', required)
+        input(type="text", placeholder='Message', name='message', required)
+        button(type="submit") Send
+
+    br
+    a(href="/") Go Home

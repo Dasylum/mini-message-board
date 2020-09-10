@@ -1,0 +1,11 @@
+extends layout
+
+block content
+    h1 Mini Message Board
+
+    each msg in messages
+        div
+            h2= msg.name
+            p= msg.message
+
+    a(href= '/new') Send Message       
